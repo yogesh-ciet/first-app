@@ -1,0 +1,12 @@
+$arrow:#737373;           /* Navbar menu notch color */
+$menu_color:#444444;      /* Menu item color */
+$search_icon_foreground:#D46142;     /* Search icon foreground color */
+$search_icon_background:#F2F0F1;     /* Search icon background color */
+$font-family-text: 'Raleway', sans-serif;
+$font-family-number: 'Open Sans', sans-serif;
+
+body{
+    font-family: $font-family-text;
+}
+
+@import 'header/header';
