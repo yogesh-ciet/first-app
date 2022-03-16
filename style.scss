@@ -1,9 +1,12 @@
-$arrow:#737373;           /* Navbar menu notch color */
+ /* $arrow:#737373;           Navbar menu notch color  Temporary Disable*/
+
+ $arrow:white; 
+
 $menu_color:#444444;      /* Menu item color */
 $search_icon_foreground:#D46142;     /* Search icon foreground color */
 $search_icon_background:#F2F0F1;     /* Search icon background color */
-$font-family-text: 'Raleway', sans-serif;
-$font-family-number: 'Open Sans', sans-serif;
+$font-family-text: 'Raleway', sans-serif;        /* Search icon background color */
+$font-family-number: 'Open Sans', sans-serif;    /* Search icon background color */
 
 body{
     font-family: $font-family-text;
