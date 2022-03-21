@@ -79,44 +79,6 @@ header{
                 }
 }}}
 
-/* Purpose: set the width of the search-box */
-
-header{
-    .container{
-          .search-box {
-              width:175px;
-              display:none; 
-              position:absolute;
-              left:80%;
-              top:75%;
-             }             
-            }
-}
-
-
-/* Purpose: Decrease the size of Navbar in iPhone X */
-
-@media screen and (max-width:768px)
-{
-    header
-    {
-      .container{
-          font-size:0.8125rem;
-        .logo{ 
-        width:90%;
-        height:90%;
-        }
-        .dropdown-menu{
-            font-size:0.8125rem;
-        }
-        .search-box{
-            width:175px;
-            height:30px;
-            //display:none;
-           } 
-    }
-    }
-}
 
 /* Purpose: Decrease the size of Navbar top-header in iPhone X */
 
@@ -135,60 +97,35 @@ header{
     }    
 }
 
-/* Purpose: Display notch with dropdown menu */
-
-header{
-    .container{
-              .dropdown-menu::before{
-                  content:'';
-                  height:0;
-                  width: 0;
-                  top:-6px;
-                  left:10px;
-                  position:absolute;
-                  border-left:6px solid transparent;
-                  border-right:6px solid transparent;
-                  border-bottom:6px solid $arrow;
-                 }
-            }
-}
-
-/* Purpose: Decrease the size of notch with dropdown menu in iPhone X */
+/* Purpose: Decrease the size of Navbar in iPhone X */
 
 @media screen and (max-width:768px)
 {
-header{
-    .container{
-              .dropdown-menu::before{
-                  content:'';
-                  height:0;
-                  width: 0;
-                  top:33px;
-                  left:14px;
-                  position:absolute;
-                  border-left:4px solid transparent;
-                  border-right:4px solid transparent;
-                  border-bottom:4px solid $arrow;
-                 }
-            }
-}
-}
-
- /* Purpose: Display the DropDown Menu on hover */
-
-header{
-    .container{  
-            .dropdown:hover .dropdown-menu{
-              // background:silver;
-               display:block;
-               box-shadow:3px 3px 20px black;
-              }
-             }
+    header
+    {
+      .container{
+          font-size:0.8125rem;
+        .logo{ 
+        width:85%;
+        height:85%;
+        }
+        .dropdown-menu{
+            font-size:0.8125rem;
+        }
+        /*
+        .search-box{
+            width:175px;
+            height:30px;
+            //display:none;
+           } 
+           */
+    }
+    }
 }
 
  /* Purpose: Display the Language DropDown Menu on hover */
  
-header{
+ header{
     .container-fluid{  
             .dropdown:hover .dropdown-menu{
                display:block;
@@ -200,8 +137,7 @@ header{
 }
 
 
-
- /* Purpose: Reduce the  size of Language DropDown Menu in iPhone X */
+ /* Purpose: Reduce the size of Language DropDown Menu in iPhone X */
 
 @media screen and (max-width:768px)
 {
@@ -242,7 +178,112 @@ header{
         }
 }}
 
- /* Purpose: Display the DropDown sub Menu on hover */
+
+/* Purpose: Set the color of menu items  */
+
+header{
+    .container{
+        .nav-item{
+        .menu-item{
+            color:$menu_color;
+        }
+    }}
+    }
+
+
+/* Purpose: Display the Language DropDown sub Menu notch in iPhone X */
+
+@media screen and (max-width:768px)
+{ 
+header{
+    .container-fluid{  
+        .top-header{
+            .dropdown{
+            .dropdown-menu::before{
+                content:'';
+                height:0;
+                width: 0;
+                top:-4px;
+                left:137px;
+                position:absolute;
+                border-left:4px solid transparent;
+                border-right:4px solid transparent;
+                border-bottom:4px solid $arrow;
+            }
+            }
+        }
+}}
+}
+
+/* Purpose: set the width of the search-box
+
+header{
+    .container{
+          .search-box {
+              width:175px;
+              display:none; 
+              position:absolute;
+              left:80%;
+              top:75%;
+             }             
+            }
+}
+
+ */
+
+/* Purpose: Display notch with dropdown menu 
+
+header{
+    .container{
+              .dropdown-menu::before{
+                  content:'';
+                  height:0;
+                  width: 0;
+                  top:-6px;
+                  left:10px;
+                  position:absolute;
+                  border-left:6px solid transparent;
+                  border-right:6px solid transparent;
+                  border-bottom:6px solid $arrow;
+                 }
+            }
+}
+*/
+/* Purpose: Decrease the size of notch with dropdown menu in iPhone X 
+
+@media screen and (max-width:768px)
+{
+header{
+    .container{
+              .dropdown-menu::before{
+                  content:'';
+                  height:0;
+                  width: 0;
+                  top:23px;
+                  left:14px;
+                  position:absolute;
+                  border-left:4px solid transparent;
+                  border-right:4px solid transparent;
+                  border-bottom:4px solid $arrow;
+                 }
+            }
+}
+}
+*/
+ /* Purpose: Display the DropDown Menu on hover
+
+header{
+    .container{  
+            .dropdown:hover .dropdown-menu{
+              // background:silver;                               // This is disable Temporary
+               display:block;
+               box-shadow:3px 3px 20px black;
+              }
+             }
+}
+
+*/
+ /* Purpose: Display the DropDown sub Menu on hover 
 
  header{
     .container{  
@@ -266,8 +307,8 @@ header{
             }
         }
 }
-
-/* Purpose: Display the DropDown sub Menu on hover in iPhone X */
+*/
+/* Purpose: Display the DropDown sub Menu on hover in iPhone X 
 
 @media screen and (max-width:767px)
 {
@@ -293,41 +334,9 @@ header{
             }
     }
 }
+*/
 
-/* Purpose: Display the Language DropDown sub Menu notch in iPhone X */
 
-@media screen and (max-width:768px)
-{ 
-header{
-    .container-fluid{  
-        .top-header{
-            .dropdown{
-            .dropdown-menu::before{
-                content:'';
-                height:0;
-                width: 0;
-                top:-4px;
-                left:137px;
-                position:absolute;
-                border-left:4px solid transparent;
-                border-right:4px solid transparent;
-                border-bottom:4px solid white;
-            }
-            }
-        }
-}}
-}
-
-/* Purpose: Set the color of menu items  */
-
-header{
-.container{
-    .nav-item{
-    .menu-item{
-        color:$menu_color;
-    }
-}}
-}
 
 
 
@@ -347,3 +356,250 @@ header{
     }    
 
  */
+
+
+ /* Purpose: (NEW) Display the DropDown Menu on hover */
+
+ header{
+    .container{ 
+        .dropdown-submenu{
+                position:fixed;
+                left:110%;
+                display:none;
+            }
+
+        .arrow{
+                float:right;
+            }
+
+        .nav-item:hover > .dropdown-mainmenu{
+            display:block;  
+            box-shadow:3px 3px 20px black;
+            }
+
+        .dropdown-menu > li:hover > .dropdown-submenu{
+            display:block;
+            box-shadow:3px 3px 20px black;
+            }
+        
+        .dropdown-mainmenu::before{
+                content:'';
+                height:0;
+                width: 0;
+                top:-6px;
+                left:10px;
+                position:absolute;
+                border-left:6px solid transparent;
+                border-right:6px solid transparent;
+                border-bottom:6px solid $arrow;
+            }
+
+        .dropdown-submenu::before{
+                content:'';
+                height:0;
+                width: 0;
+                top:10px;
+                left:-12px;
+                position:absolute;
+                border-left:6px solid transparent;
+                border-right:6px solid $arrow;
+                border-bottom:6px solid transparent; 
+                border-top:6px solid transparent;
+            }
+    }
+}
+
+
+/* Purpose: Decrease the size of notch with dropdown menu in iPhone X */
+
+@media screen and (max-width:768px)
+{
+header{
+    .container{
+              .dropdown-mainmenu::before{
+                  content:'';
+                  height:0;
+                  width: 0;
+                  top:33px;
+                  left:14px;
+                  position:absolute;
+                  border-left:4px solid transparent;
+                  border-right:4px solid transparent;
+                  border-bottom:4px solid $arrow;
+                 }
+              .dropdown-submenu::before{
+                  content:'';
+                  height:0;
+                  width: 0;
+                  top:-11px;
+                  left:14px;
+                  position:absolute;
+                  border-left:4px solid transparent;
+                  border-right:4px solid transparent;
+                  border-bottom:4px solid $arrow;
+                }                          
+              .dropdown-submenu{                 
+                  position:relative;
+                  left:0;
+                  width:96%;
+                  margin:auto;
+                }  
+              .search-controller{
+                display:none;
+               }
+          }
+        }
+}
+
+
+
+
+/* Purpose: Full screen search box with light background */
+
+header{
+    .container{ 
+  /*
+* {
+    box-sizing: border-box;
+  }
+  */
+  .overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.7);
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 46%;
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+  }
+  
+  .overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+}}
+
+/* Purpose: Full screen search box with light background in iPhone X */
+
+@media screen and (max-width:768px)
+{
+
+header{
+    .container{
+  /*
+* {
+    box-sizing: border-box;
+  }
+  */
+  .overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.7);
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 46%;
+    width: 60%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+  }
+  
+  .overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+}}
+}
+
+/* Purpose: Display search icon with CIET logo but hidden in Desktop */
+
+header{
+    .container{
+        .search-icon{
+            font-size: 14px;    
+            color:$search_icon_foreground;    
+            background:$search_icon_background;
+            border-radius: 50%;    
+            padding:4px 7px;
+            display: none;
+        }
+    }
+}
+
+/* Purpose: Display search icon besides navbar-toggler in iPhone X */
+
+@media screen and (max-width:768px)
+{
+    header{
+        .container{
+            .search-icon{
+               display:inline-block;
+            }
+        }
+    }
+}    

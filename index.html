@@ -76,7 +76,11 @@
     <a class="navbar-brand" href="#"><img src="logo.jpeg" class="logo">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="fas fa-bars"></span>
-    </button></a>
+    </button>
+  <span class="search-icon ml-1" onclick="openSearch()"><i class="fas fa-search"></i></span>
+  
+  
+  </a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
@@ -86,7 +90,7 @@
           <a class="nav-link dropdown-toggle menu-item fw-bold"  href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Constitutent
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <ul class="dropdown-menu dropdown-mainmenu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Department of ICT &amp; Training</a></li>
             <li><a class="dropdown-item" href="#">Media Production Division</a></li>
             <li><a class="dropdown-item" href="#">Planing and Research Division</a></li>
@@ -108,16 +112,17 @@
           <a class="nav-link dropdown-toggle menu-item fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Events
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <ul class="dropdown-menu dropdown-mainmenu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">On Going Event</a></li>
             <li><a class="dropdown-item" href="#">Past Events</a></li>
           </ul>
         </li>
+        <!--
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle menu-item fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             More
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <ul class="dropdown-menu dropdown-mainmenu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Resouces</a></li>
             <li><a class="dropdown-item" href="#">Transmision</a></li>   
             <li><a class="dropdown-item" href="#">RTI</a></li>
@@ -125,7 +130,7 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Peoples
               </a>
-              <ul class="dropdown-menu submenuitem" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Past</a></li>
                 <li><a class="dropdown-item" href="#">Present</a></li>   
                 <li><a class="dropdown-item" href="#">Future</a></li>                             
@@ -135,12 +140,54 @@
             <li><a class="dropdown-item" href="#">Contact US</a></li>
           </ul>
         </li>
-        <li class="nav-item search-controller">
+
+-->
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle menu-item fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More
+          </a>
+          <ul class="dropdown-menu dropdown-mainmenu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Resouces</a></li>
+            <li><a class="dropdown-item" href="#">Transmision</a></li>   
+            <li><a class="dropdown-item" href="#">RTI </a></li>                                 
+            <li><a class="dropdown-item" href="#">Peoples<i class="fas fa-caret-right arrow"></i></a>          
+                  <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">NCERT</a></li>
+                    <li><a class="dropdown-item" href="#">CIET</a></li>   
+                    <li><a class="dropdown-item" href="#">MPD</a></li>
+                  </ul>              
+            </li>                            
+            <li><a class="dropdown-item" href="#">SIETs</a></li>
+            <li><a class="dropdown-item" href="#">Contact Us<i class="fas fa-caret-right arrow"></i></a>          
+              <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Facebook</a></li>
+                <li><a class="dropdown-item" href="#">Instagram</a></li>   
+                <li><a class="dropdown-item" href="#">Twitter</a></li>
+               </ul>              
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item search-controller" onclick="openSearch()">
           <a class="nav-link"><span class="search-ico ml-3"><i class="fas fa-search"></i></span></a>
+        </li>
+
+          <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close">×</span>
+            <div class="overlay-content">
+              <form action="https://ciet.nic.in/">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+          <!--
           <form class="d-flex">
             <input class="form-control me-2 search-box" type="search" placeholder="Search" aria-label="Search">
           </form>
-        </li>
+      
+        </li>  -->
       </ul>    
     </div>
   </div>
@@ -163,11 +210,26 @@
     }
 </script>
 
+<!--  This code is not require in the whole screen search box------
 <script>
 $(".search-controller").click(function(){
 $(".search-box").css("display","block");
 });
 </script>
+-->
+
+
+<script>
+  function openSearch() {
+    document.getElementById("myOverlay").style.display = "block";
+  }
+  
+  function closeSearch() {
+    document.getElementById("myOverlay").style.display = "none";
+  }
+  </script>
+
+
 
 </body>
 
