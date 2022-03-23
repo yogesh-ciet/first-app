@@ -34,7 +34,6 @@
 
 </head>
 <body onload="current_time()">
-
 <header>
 <div class="container-fluid">
      <div class="row top-header text-center">
@@ -75,13 +74,13 @@
   <div class="container">
     <a class="navbar-brand" href="#"><img src="logo.jpeg" class="logo">
     <button class="navbar-toggler navbar-toggler-custom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="fas fa-bars"></span>
+      <span class="fas fa-bars"  onclick="openNav()"></span>
     </button>
   <span class="search-icon" onclick="openSearch()"><i class="fas fa-search"></i></span>
   
   
   </a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse customize" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link menu-item fw-bold link-active" aria-current="page" href="#">Home</a>   <!-- active class removed for the testing purpose-->
@@ -197,6 +196,14 @@
 </header>
 <hr>
 
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Career</a>
+  <a href="#">Contact</a>
+</div>
+
  <!-- This is for the current date and time (using javascript) -->  
 <script>
     window.setInterval('current_time()',1000)
@@ -227,10 +234,15 @@ $(".search-box").css("display","block");
   function closeSearch() {
     document.getElementById("myOverlay").style.display = "none";
   }
-  </script>
+ 
+  function openNav() {
+   document.getElementById("mySidebar").style.width = "200px";
+  }
 
-
-
+  function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  }
+</script>
 </body>
 
 </html>

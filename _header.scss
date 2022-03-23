@@ -470,22 +470,40 @@ header{
                   content:'';
                   height:0;
                   width: 0;
-                  top:-11px;
-                  left:14px;
+                  top:11px;
+                  left:-12px;
                   position:absolute;
-                  border-left:4px solid transparent;
-                  border-right:4px solid transparent;
-                  border-bottom:4px solid $arrow;
-                }                          
+                  border-left:6px solid transparent;
+                  border-right:6px solid $arrow;;
+                  border-bottom:6px solid transparent; 
+                  border-top:6px solid transparent;
+                }      
+                
+                /* This is temporary disabled
               .dropdown-submenu{                 
                   position:relative;
-                  left:0;
+                  left:7px;
+                  top:50px;
                   width:96%;
-                  margin:auto;
-                }  
+                 //margin:auto;
+                } 
+                */ 
               .search-controller{
                 display:none;
                }
+
+               .dropdown-mainmenu{
+                   li{
+                        position: relative;
+                   }
+                     .dropdown-submenu{                 
+                            position:absolute;
+                            left:50%;
+                            width:50%;
+                           //margin:auto;
+                          } 
+                                     
+                }           
           }
         }
 }
@@ -666,3 +684,29 @@ header{
         }
     }
 }
+
+
+
+    .sidebar{
+      height: 50%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #16558F;;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      border-top-right-radius:25px;
+      border-bottom-right-radius: 25px;
+    }
+
+    header{
+        .container{
+            .customize{
+                display:none;
+                }
+        }
+    }
+   
