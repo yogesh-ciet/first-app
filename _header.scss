@@ -45,7 +45,7 @@ header
             .bottom-header
             {
             .logo{
-                height:90%;
+                //height:90%;
                 width:90%;
             }
            
@@ -106,8 +106,8 @@ header{
       .container{
           font-size:0.8125rem;
         .logo{ 
-        width:85%;
-        height:85%;
+        width:75%;
+        //height:85%;
         }
         .dropdown-menu{
             font-size:0.8125rem;
@@ -362,9 +362,28 @@ header{
 
  header{
     .container{ 
+
+        .dropdown-item{
+            font-weight: 500;
+        }
+
+
+        .dropdown-menu{
+            border: none;
+            li{
+                position: relative;
+
+                .dropdown-menu{
+                    position: absolute;
+                    right: -100%;
+                    top: -5px;
+                }
+            }
+        }
+  
         .dropdown-submenu{
                 position:fixed;
-                left:110%;
+                // left:110%;
                 display:none;
             }
 
@@ -372,16 +391,36 @@ header{
                 float:right;
             }
 
+        /* Purpose: Old version equivalent CSS code
+
         .nav-item:hover > .dropdown-mainmenu{
             display:block;  
-            box-shadow:3px 3px 20px black;
+            box-shadow:2px 2px 15px #0000006e;
             }
 
         .dropdown-menu > li:hover > .dropdown-submenu{
             display:block;
-            box-shadow:3px 3px 20px black;
+            box-shadow:2px 2px 15px #0000006e;
             }
-        
+            
+        */
+
+        .nav-item:hover{
+            .dropdown-mainmenu{
+                      display:block;  
+                      box-shadow:2px 2px 15px #0000006e;
+            }
+        }
+
+        .dropdown-menu{
+                  li:hover{
+                    .dropdown-submenu{
+                              display:block;
+                              box-shadow:2px 2px 15px #0000006e;
+                 }
+            }
+        }
+
         .dropdown-mainmenu::before{
                 content:'';
                 height:0;
@@ -500,16 +539,22 @@ header{
     float: left;
     width: 80%;
     background: white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;;
   }
   
   .overlay button {
     float: left;
     width: 20%;
     padding: 15px;
-    background: #ddd;
+    //background: #ddd;
     font-size: 17px;
     border: none;
     cursor: pointer;
+    background:#D46142;
+    color:white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
 }}
 
@@ -572,6 +617,10 @@ header{
     font-size: 17px;
     border: none;
     cursor: pointer;
+    background:#D46142;
+    color:white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
 }}
 }
@@ -598,8 +647,22 @@ header{
     header{
         .container{
             .search-icon{
+               position:absolute;
                display:inline-block;
+               margin-left:10px;
+               margin-top:12px;
             }
         }
     }
 }    
+
+header{
+    .container{
+        .navbar-toggler-custom{
+          border:none;
+          color:$search_icon_foreground;    
+          background:$search_icon_background;
+          margin-left:10px;
+        }
+    }
+}
