@@ -685,22 +685,67 @@ header{
     }
 }
 
-
+/* Purpose: Display Sidebar on the Small Screeen */
 
     .sidebar{
-      height: 50%;
+      height: 100%;
       width: 0;
       position: fixed;
       z-index: 1;
       top: 0;
       left: 0;
-      background-color: #16558F;;
+      background-color: #D46142;
+      opacity: 0.8;
       overflow-x: hidden;
       transition: 0.5s;
       padding-top: 60px;
-      border-top-right-radius:25px;
-      border-bottom-right-radius: 25px;
-    }
+      font-size: 14px;
+     // height: 50%;
+     // border-top-right-radius:25px;
+     // border-bottom-right-radius: 25px;
+
+
+a{
+    color:white;
+    font-weight:900;
+    text-decoration: none; 
+}
+li{
+
+    list-style: none;
+    margin-left: 0;
+    color:white;
+   // font-weight:300;
+}
+ .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 26px;
+    margin-left: 50px;
+  }
+  .closebtn:hover {
+  color:black;
+  }
+  .sidebar-submenu{
+         display:none;
+  }
+  .sidebar-submenu1{
+    display:none;
+  }
+  .sidebar-mainmenu:hover 
+       {
+        .sidebar-submenu{
+              display:block;
+               }
+       }
+  .sidebar-submenu:hover 
+     {
+ .sidebar-submenu1{
+         display:block;
+         }
+     }
+}
 
     header{
         .container{
@@ -710,3 +755,336 @@ header{
         }
     }
    
+
+/* Purpose: For About Us and Joint Director Message */
+
+    .about-profile-section{
+        .left-panel{
+             text-align: justify;
+             padding:2rem ;
+                    .custom-button{
+                        background-color: #D46142;
+                        color:white;
+                        text-decoration:none;
+                        border-radius: 1.5rem;
+                        padding:.5rem 1.25rem;
+                    }
+        }
+    .right-panel{
+        background-color:#F6F6F6;
+        text-align: justify;
+        border-radius:1.5rem;
+        padding:1.5rem;    
+        .right-panel-box{
+            background:white;
+            width:90%;
+            border-radius:1.5rem;
+            box-shadow: 5px 5px 10px grey;
+            margin:auto;
+            .profile-pic{
+                  margin:auto;
+                  .jd-image{
+                      width:7.813rem;
+                  }
+            }
+        }
+        .jd-message{
+            padding:1.5rem;
+        }
+        }
+    }
+
+
+/* Purpose: Media Query For About Us and Joint Director Message */
+
+@media screen and (max-width:768px)
+{
+    .about-profile-section{
+        .left-panel{
+             h4{
+               font-size: 1rem;
+               }
+            }
+       font-size: 0.75rem;
+       .right-panel{
+        .right-panel-box{
+            .profile-pic{
+                text-align: center;
+                margin-top:0.313rem;
+                margin-bottom:0;
+                .jd-image{
+                    width:5rem;
+                }
+            } 
+        } 
+      }
+    }
+}
+
+.bottom-panel{
+padding:20px;
+text-align:center;
+
+}
+.bottom-panel-main{
+
+    background-color: #F4F4F4;
+
+    }
+
+/* Purpose: Manage Infrastructure and Publication Section */
+
+.infra-pub-section
+ {
+     padding:10px;
+    .infra-pub-subsection
+    {
+        border: 5px solid #EDAE8B;
+        border-radius:25px;
+        padding: 25px;
+        display:inline-block;
+        text-align:center;
+        margin:10px;
+        width:200px;
+        height:200px;
+        font-weight: bold;
+      //  box-shadow:5px 5px 3px #EDAE8B;
+    }
+
+    .infra-pub-subsection:hover
+    {
+    //color:white;
+    background:#F9E6DC;
+    }
+}
+
+
+/* Purpose: Manage Constitution Section 
+
+.constitution-section{
+    background-color: #F2F2F2;
+    padding:1.5rem; 
+    .constitution-subsection{
+        background-color: #393862;
+        color:white;
+        width:2.5rem;
+        text-align: center;
+        float:left;
+
+        // padding:2.5rem 3.125rem;         // Equivalent to 50px
+       // margin:0.5rem;              // Equivalent to 16px
+
+    }
+    .constitution-subsection-active{
+        background-color: #D46142;
+        color:white;
+        width:2.5rem;
+
+        //padding:2.5rem 3.125rem;         // Equivalent to 50px
+        //margin:1rem;              // Equivalent to 16px
+    }
+
+
+}
+.constitution-section{
+    background-color: #F2F2F2;
+    color:white;
+    font-weight:500;
+    padding:1.5rem; 
+    text-align:center;
+    .constitution-subsection{
+        background-color: #393862;
+        margin:2rem;
+        padding:50px;
+        width:20%; 
+        float:left;
+    }
+    .constitution-subsection-active{
+        background-color: #D46142;
+        margin:2rem;
+        padding:50px;
+        width:20%;float:left;
+    }
+}
+ */
+
+
+ /* Purpose: Manage Constitution Section*/
+ .constitution-section-main{
+    background-color: #F2F2F2;
+    color:white;
+    padding:25px;
+    text-align: center;    
+    .constitution-subsection-active{
+        background-color: #D46142;
+        margin:2rem;
+        padding:50px;
+        width:20%; 
+    }
+    .constitution-subsection{
+        background-color: #393862;
+        margin:2rem;
+        padding:50px;
+        width:20%; 
+    }
+}
+
+ /* Purpose: Media Query to Manage Constitution Section*/
+@media screen and (max-width:768px)
+{
+    .constitution-section-main{
+        font-size: 10px;
+    padding:5px;
+    text-align: center;    
+    .constitution-subsection-active{
+        // margin:2rem;
+        //padding:150px;
+        width:85%; 
+        height:150px;
+        margin-bottom: 2px;
+    }
+    .constitution-subsection{
+        // margin:2rem;
+        //padding:150px;
+        width:85%;
+        height:150px;
+        margin-bottom: 2px;
+        padding-top: 30px;
+
+    }
+  }
+}
+
+ /* Purpose: Media Query to Manage Infrastructure and Publication Section*/
+@media screen and (max-width:768px)
+{
+    .infra-pub-section
+    {
+        padding:10px;
+       .infra-pub-subsection
+       {
+           padding: 25px;
+           font-size: 10px;
+           width:150px;
+           height:150px;
+           margin:5px auto;
+           img{
+             width:50%;
+           }
+       }
+   }
+}
+
+ /* Purpose: Media Query to Bottom Panel Section*/
+@media screen and (max-width:768px)
+{
+    .bottom-panel{
+        padding:20px;
+            }
+    .bottom-panel-item{
+       //border: 2px solid silver;
+        margin-bottom: 5px;
+        img{
+            width:100px;
+        }
+    }
+}
+
+ /* Purpose: Digital Education Initiative Section*/
+.digital-education-initiatives{
+   background:#F6E2C9;
+   padding:25px;
+   .custom-button{
+    background-color: #D46142;
+    color:white;
+    text-decoration:none;
+    border-radius: 1.5rem;
+    padding:.5rem 1.25rem;
+}
+}
+
+ /* Purpose: Ongoing Events Section*/
+.ongoing-events{
+    padding:25px;
+    .custom-button{
+        background-color: #D46142;
+        color:white;
+        text-decoration:none;
+        border-radius: 1.5rem;
+        padding:.5rem 1.25rem;
+    }
+}
+
+/* Purpose: Slick Slidder Section*/
+.ongoing-events{
+    .slick-carousel {
+        width: 1190px;
+        height:170px;
+        margin:auto;
+        padding-left:7px;
+        //border:10px solid red;        
+      }
+      
+      .slick-slide {
+        width: 50px;
+        //border:10px solid green;
+      }
+      
+      .slick-next::before, .slick-prev::before {
+      color:#D46142;
+      font-size: 30px;
+      }
+
+      .slick-carousel img{
+       border-radius:15px;
+       width:380px;
+       height:130px;
+       }
+      
+      .slick-dots li.slick-active button:before {
+        color:#D46142;
+       }
+
+}
+
+
+.digital-education-initiatives{
+
+    .slick-carousel {
+        width: 1190px;
+        height:170px;
+        margin:auto;
+ 
+        //border:10px solid red;        
+      }
+      
+      .slick-slide {
+        width: 50px;
+        height:150px;
+        //border:10px solid green;
+        padding-left: 100px;
+      }
+      
+      .slick-next::before, .slick-prev::before {
+      color:#D46142;
+      font-size: 30px;
+      }
+
+      /*
+      .slick-carousel img{
+       border-radius:15px;
+       width:380px;
+       height:130px;
+       }
+       */
+      
+      .slick-dots li.slick-active button:before {
+        color:#D46142;
+       }
+
+
+
+
+
+
+}
