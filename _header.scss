@@ -824,13 +824,15 @@ li{
 .bottom-panel{
 padding:20px;
 text-align:center;
-
 }
-.bottom-panel-main{
 
-    background-color: #F4F4F4;
-
+.bottom-panel-item{
+    img{
+     border:1px solid silver;
+     border-radius:10px;
+     box-shadow: 2px 2px 5px silver;
     }
+}
 
 /* Purpose: Manage Infrastructure and Publication Section */
 
@@ -1037,7 +1039,7 @@ text-align:center;
 
       .slick-carousel img{
        border-radius:15px;
-       width:380px;
+       width:200px;
        height:130px;
        }
       
@@ -1081,10 +1083,237 @@ text-align:center;
       .slick-dots li.slick-active button:before {
         color:#D46142;
        }
+}
+
+
+/* Purpose: Media Query for ongoing events Slick Slidder Section*/
+@media screen and (max-width:768px)
+{
+
+    .ongoing-events{
+        font-size: 10px;
+        .slick-carousel {
+            width: 330px;
+            height:50px;
+            margin:auto;
+            //padding-left:7px;
+            //border:10px solid red;    
+            font-size: 7px;    
+          }
+          
+          .slick-slide {
+            width: 50px;
+            //border:10px solid green;
+          }
+          
+          .slick-next::before, .slick-prev::before {
+          color:#D46142;
+          font-size: 15px;
+          }
+    
+          .slick-carousel img{
+           border-radius:5px;
+           width:50px;
+           height:30px;
+           }
+          
+           
+          .slick-dots li.slick-active button:before {
+            color:#D46142;
+           }
+           .custom-button{
+            font-size: 8px;
+        }
+    
+    }
 
 
 
+}
+
+/* Purpose: Media Query for Digital Education Initiative Slick Slidder Section*/
+@media screen and (max-width:768px)
+{
+    .digital-education-initiatives{
+
+        .slick-carousel {
+            width: 350px;
+            height:70px;
+            margin:auto;
+            font-size:8px;
+            //border:10px solid red;        
+          }
+          
+          .slick-slide {
+            width: 10px;
+            height:50px;
+            //border:10px solid green;
+
+          }
+          
+          .slick-next::before, .slick-prev::before {
+          color:#D46142;
+          font-size: 15px;
+          }
+    
+          
+          .slick-carousel img{
+            border-radius:5px;
+            width:50px;
+            height:30px;
+           }
+           
+          
+          .slick-dots li.slick-active button:before {
+            color:#D46142;
+           }
+
+           .custom-button{
+            font-size: 8px;
+        }
+    }
+
+}
 
 
+/* Purpose: Tabs and Pills for the Notifiacation Section*/
 
+.notification{
+	background-color:#F2F2F2;
+	padding:25px;	
+    	
+	.main-content{
+	background:white;
+	padding:20px 10px;	
+	border-radius:10px;
+	box-shadow:5px 5px 5px silver;
+    min-height: 325px;
+	width:70%;
+    margin:auto;
+	}
+	
+	li{
+	padding:3px;	
+	}
+	
+    .contract{
+	color:#6A933E;
+	font-weight:bold;
+	font-size:14px;
+    padding:0px 10px;
+    border:1px solid #6A933E;
+	border-radius:15px;
+    }
+	
+	.regular{
+	color:#BD4646;
+	font-weight:bold;
+	font-size:14px;
+	padding:0px 15px;
+	border:1px solid #BD4646;
+	border-radius:15px;
+	}
+	
+	.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #D46142;
+	color:white;
+	font-size:14px;
+	font-weight:bold;
+	border-radius:25px;
+	border:0px;
+    }
+	
+	.nav-pills .nav-link {
+    color:black;
+	font-size:14px;
+	font-weight:bold;
+	background-color: white;
+	color:black;
+	border-radius:25px;
+	border:0px;
+	box-shadow:5px 5px 5px silver;
+	}
+
+    .notification-tab{
+        width:30%;
+        margin:auto;  
+        li{
+            margin:auto;    
+            }
+    }
+}
+
+/* Purpose: Media Query of Tabs and Pills for the Notifiacation Section*/
+
+@media screen and (max-width:768px)
+{
+
+    .notification{
+        background-color:#F2F2F2;
+        padding:15px 0px;	
+           
+        .main-content{
+        background:white;
+        padding:20px 1px;	
+        border-radius:10px;
+        box-shadow:5px 5px 5px silver;
+        min-height: 270px;
+        width:100%;
+        margin:auto;
+        }
+        
+        li{
+        padding:1px;
+        font-size:14px;	
+        }
+        
+        .contract{
+        color:#6A933E;
+        font-weight:bold;
+        font-size:10px;
+        padding:0px 10px;
+        border:1px solid #6A933E;
+        border-radius:15px;
+        }
+        
+        .regular{
+        color:#BD4646;
+        font-weight:bold;
+        font-size:10px;
+        padding:0px 15px;
+        border:1px solid #BD4646;
+        border-radius:15px;
+        }
+        
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        color: #fff;
+        background-color: #D46142;
+        color:white;
+        font-size:10px;
+        font-weight:bold;
+        border-radius:25px;
+        border:0px;
+        }
+        
+        .nav-pills .nav-link {
+        color:black;
+        font-size:10px;
+        font-weight:bold;
+        background-color: white;
+        color:black;
+        border-radius:25px;
+        border:0px;
+        box-shadow:5px 5px 5px silver;
+        }
+    
+        .notification-tab{
+            width:100%;
+            margin:auto;  
+            li{
+                margin:auto;    
+                }
+        }
+    }
+   
 }
