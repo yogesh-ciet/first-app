@@ -1317,3 +1317,371 @@ text-align:center;
     }
    
 }
+
+
+
+
+
+
+/************************************************************
+*************************************************************
+*************************************************************
+*********************Farman Sir Code*************************
+*************************************************************
+*************************************************************
+************************************************************
+
+
+
+
+
+//............footer first section strat................
+
+.footerciet
+ {
+    background-color:#313131;
+    .container
+        {      
+         .footrow
+            {
+            padding-top: 20px;
+            margin-bottom: 10px;
+            ul
+                {
+                list-style: none;
+                padding-left: 0;
+                li:not(:last-child)
+                {
+                    margin-bottom: 10px;
+                }  
+                li a
+                {
+                    font-size: $myfontsize;
+                    text-transform: capitalize;
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-weight: 500; 
+                    color: $fontcolor;                   
+                    display: block;
+                    transition: all 0.3s ease;
+                    &:hover
+                    {
+                        color: $color;
+                        padding-left: 4px;
+                        
+                    }
+                }
+            }
+            }
+                h4          
+                 {                   
+                    
+                    color: #ffffff;
+                    text-decoration: capitalize;
+                    margin-bottom: 20px;
+                    font-weight: 500;
+                    position: relative;
+                    h4::before                  
+                    {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: 10px;                    
+                        box-sizing: border-box;                        
+
+                    }
+                }
+                .contacts
+                {
+                color: #ffffff;
+                font-size: $myfontsize;  
+                line-height: 1.5;                           
+                margin-bottom: 17px;
+                font-weight: 500;
+                color: $fontcolor;
+                position: relative;
+                font-family:$heading-font
+                }
+                .mails
+                {
+                    padding: 50px 0;
+                    color: #ffffff;                    
+                    font-family: $paragraph-font; 
+                    font-weight: 500;
+                    color: $fontcolor;                  
+                    
+                    .mobileno
+                    {
+                        text-decoration: none;
+                        padding-left: 35px;
+                        color: #ffffff;
+                        font-size: $myfontsize;
+                        font-family: $paragraph-font;
+                        font-weight: 500;
+                        color: $fontcolor;
+                        margin-bottom: auto;
+                    }
+                    
+                }
+                .mailicons
+                {
+                    display: inline-block;
+                    height: 30px;
+                    width: 30px;
+                    background-color:#5B8F13;
+                    margin: 0%;
+                    text-align: center;
+                    line-height: 30px;
+                    border-radius: 50%;
+                    color: #ffffff;
+                    transition: all 0.5s ease;
+                    
+                }
+                .faceicon{
+                    padding-right: 5px;
+                .facebookicons
+                {
+                    margin-left: 5px;
+                    display: inline-block;
+                    height: 40px;
+                    width: 40px;
+                    background-color:#357fe0d2;
+                    margin: 0%;
+                    text-align: center;
+                    line-height: 40px;
+                    border-radius: 50%;
+                    color: #ffffff;
+                    transition: all 0.5s ease;
+                    // :hover{
+                    //     // color: #94d7f1;
+                    //     // background-color: #ffffff;
+                    // }
+                } }
+                .twiticon{
+                    padding-right: 5px;
+                .twitericons
+                {
+                    margin-left: 5px;
+                    display: inline-block;
+                    height: 40px;
+                    width: 40px;
+                    background-color:#63c5ecfb;
+                    margin: 0%;
+                    text-align: center;
+                    line-height: 40px;
+                    border-radius: 50%;
+                    color: #ffffff;
+                    transition: all 0.5s ease;
+                    // :hover{
+                    //     // color: #94d7f1;
+                    //     // background-color: #ffffff;
+                    // }
+                }
+            }
+            
+                .youtubeicons
+                {
+                    margin-left: 5px;
+                    display: inline-block;
+                    height: 40px;
+                    width: 40px;
+                    background-color:rgba(245, 10, 10, 0.678);
+                    margin: 0%;
+                    text-align: center;
+                    line-height: 40px;
+                    border-radius: 50%;
+                    color: #ffffff;
+                    transition: all 0.5s ease;
+                    // :hover{
+                    //     // color: #94d7f1;
+                    //     // background-color: #ffffff;
+                    // }
+                
+            }
+            .insticon{
+                padding-right: 5px;
+                .instagramicons
+                {
+                    margin-left: 5px;
+                    display: inline-block;
+                    height: 40px;
+                    width: 40px;
+                    background-color:#f0a4be62;
+                    margin: 0%;
+                    text-align: center;
+                    line-height: 40px;
+                    border-radius: 50%;
+                    color: #ffffff;
+                    transition: all 0.5s ease;
+                    // &:hover{
+                    //     padding-left: 5px;
+                    // }
+                }  
+            }
+                .visitor{                  
+                       padding-top: 45px;                
+                    .visitorpara{
+                       
+                        color: #ffffff;
+                        background-color: #D46142;                        
+                        width: 200px;
+                        height: 40px;
+                        border-radius: 25px;
+                        text-align: left;
+                        padding: 9px;
+                        font-weight: 500;
+                        font-family:$paragraph-font;
+                    }                   
+                    
+                }            
+       }
+       
+}
+//.........footer first section end..........
+
+//............footer second section strat..............
+.footercopy
+       {
+        background-color: #111010;        
+        .copyright
+        {
+            padding-left: 10px;
+            color: #ffffff;
+            font-weight: 500;
+            font-family:$heading-font;
+            color: $fontcolor;            
+    
+        }
+        .sitemaps
+        {
+            
+            color: #ffffff;
+            font-family:$heading-font;
+            font-weight: 500;
+            text-align: right;
+            color: $fontcolor;
+            padding-right: 15px;
+            
+    
+        }
+    }
+    //............footer second section end..................
+
+   //.............media query start.............
+   
+    @media (max-width:1441px)
+    {
+        
+      .container{
+          padding-left: 20px;
+      }
+           
+    }
+    @media (max-width:1024px)
+    {
+        
+       .mails{
+           padding-top: 0;
+       }
+        .follow{
+            padding-top: 20px;
+        }
+           
+    }
+
+    
+    @media (max-width:767px)
+    {
+        
+                        
+        .footerciet {
+           
+            .container {
+                .footrow{
+                   
+                    h4{
+                        padding-top: 30px;
+                    }
+                
+                .mails
+            {   
+                
+                padding: 20px 0;
+                
+            }
+        }
+        }
+        .footercopy
+        {
+            .copyright
+            {
+                text-align: center;
+                margin-bottom: 0;
+            }
+            
+         .sitemaps
+         {
+            text-align: center;
+            margin-bottom: 17px;
+        }
+    }  
+        
+    }  
+        
+           
+    }
+    @media (max-width:448px)
+    {
+        
+        .footerciet {
+            
+            .container {
+                .footrow{
+                   
+                    h4{
+                        padding-top: 30px;
+                    }
+                .mails
+            {
+                
+                padding: 2px 0;
+                
+            }
+            }
+        }
+        }
+        .footercopy
+        {
+            .copyright
+            {
+                text-align: center;
+                margin-bottom: 0;
+            }
+         .sitemaps
+         {
+            text-align: center;
+            margin-bottom: 17px;
+        }
+    }  
+        
+    }
+
+    //..............Media query end..............
+
+
+*/
+
+
+
+
+footer{
+background-color: #313131;;
+color:white;
+padding-top:25px;
+.last-row{
+
+
+    background-color: #0D0D0D;
+}
+
+}
